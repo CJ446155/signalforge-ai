@@ -19,7 +19,7 @@ The repository-root `SKILL.md` is the Agent entry point. It instructs a compatib
 ## Links
 
 - Live demo: https://signalforge-ai.a1046434848.chatgpt.site
-- GitHub: add the public repository URL after publishing
+- GitHub: https://github.com/CJ446155/signalforge-ai
 
 ## Track
 
