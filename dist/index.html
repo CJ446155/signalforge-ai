@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SignalForge AI — powered by Binance Agent OS" />
+  <title>SignalForge AI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand"><span class="mark">S</span><div><b>SignalForge</b><small>BINANCE AGENT OS</small></div></div>
+      <nav>
+        <button class="nav active">⌁<span>市场雷达</span></button>
+        <button class="nav">◎<span>分析记录</span></button>
+        <button class="nav">◇<span>风险规则</span></button>
+      </nav>
+      <div class="agent-status"><i></i><div><b>Agent 在线</b><small>只读模式 · 无交易权限</small></div></div>
+    </aside>
+
+    <main>
+      <header>
+        <div><p class="eyebrow">MARKET INTELLIGENCE</p><h1>交易之前，先让数据说话。</h1></div>
+        <div class="header-meta"><span id="clock">--:--:-- UTC</span><span class="live"><i></i> LIVE</span></div>
+      </header>
+
+      <section class="market-strip" id="marketStrip"></section>
+
+      <section class="workspace">
+        <div class="control panel">
+          <div class="panel-head"><div><p class="kicker">01 / INPUT</p><h2>选择分析标的</h2></div><span class="badge">SPOT</span></div>
+          <div class="symbols" id="symbols"></div>
+          <label>分析周期</label>
+          <div class="segments"><button data-period="15m">15m</button><button class="on" data-period="1h">1h</button><button data-period="4h">4h</button><button data-period="1d">1D</button></div>
+          <label>风险偏好</label>
+          <input id="risk" type="range" min="1" max="3" value="2" />
+          <div class="range-labels"><span>保守</span><span>均衡</span><span>积极</span></div>
+          <button id="run" class="run"><span>运行 Agent 分析</span><b>→</b></button>
+          <p class="hint">调用公开市场数据，不连接账户，不执行订单。</p>
+        </div>
+
+        <div class="result panel" id="result">
+          <div class="panel-head"><div><p class="kicker">02 / AGENT OUTPUT</p><h2>交易准备度报告</h2></div><span id="freshness" class="badge muted">等待运行</span></div>
+          <div class="empty" id="empty"><div class="orb"><span></span></div><h3>等待分析任务</h3><p>选择标的与周期后，Agent 将生成可解释的判断。</p></div>
+          <div class="report hidden" id="report">
+            <div class="verdict-row"><div><p>综合判断</p><h3 id="verdict">等待确认</h3></div><div class="score"><strong id="score">--</strong><span>/100</span></div></div>
+            <div class="meter"><span id="meter"></span></div>
+            <div class="metrics">
+              <div><small>24H 涨跌</small><b id="change">--</b></div>
+              <div><small>24H 成交额</small><b id="volume">--</b></div>
+              <div><small>波动强度</small><b id="volatility">--</b></div>
+            </div>
+            <div class="reason"><p class="kicker">AGENT REASONING</p><ul id="reasons"></ul></div>
+            <div class="guard"><span>盾</span><p><b>风险护栏已启用</b><br>结果仅用于研究；任何交易动作均需人工确认。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <footer><span>Powered by Binance Agent OS</span><span>Public market data · Explainable rules · Human-in-the-loop</span></footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
