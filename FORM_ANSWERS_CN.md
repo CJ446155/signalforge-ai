@@ -26,7 +26,7 @@ https://signalforge-ai.a1046434848.chatgpt.site
 
 ## GitHub 链接
 
-发布公开仓库后填写。
+https://github.com/CJ446155/signalforge-ai
 
 ## X 帖子链接
 
