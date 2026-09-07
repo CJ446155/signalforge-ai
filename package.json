@@ -1,0 +1,1 @@
+{"name":"signalforge-ai","version":"1.0.0","private":true,"description":"Binance Agent OS Mini Hackathon Track 1 submission","scripts":{"start":"npx serve dist"}}
