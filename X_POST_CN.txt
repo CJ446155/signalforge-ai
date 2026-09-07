@@ -7,7 +7,7 @@
 因此 SignalForge 默认只读、不连接账户、不自动执行订单，每个结论都会附带证据与风险护栏，最终决定仍由人完成。
 
 Demo：https://signalforge-ai.a1046434848.chatgpt.site
-GitHub：〔发布仓库后把链接粘贴到这里〕
+GitHub：https://github.com/CJ446155/signalforge-ai
 
 Built with @binancezh Binance Agent OS
 #BinanceAgentOS #AIAgent
