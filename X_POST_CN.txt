@@ -1,0 +1,13 @@
+我用 Binance Agent OS 做了一个不负责“喊单”的 AI Agent：SignalForge AI。
+
+它会读取 BTC、ETH、BNB、SOL、XRP 等主流现货标的的市场数据，从趋势、流动性和波动风险三个维度生成交易准备度评分，并输出「可关注 / 等待确认 / 暂不交易」。
+
+我更想解决的问题不是“AI 能不能猜涨跌”，而是：AI 给出的判断能不能被看懂、被复核，也能明确知道什么时候失效。
+
+因此 SignalForge 默认只读、不连接账户、不自动执行订单，每个结论都会附带证据与风险护栏，最终决定仍由人完成。
+
+Demo：https://signalforge-ai.a1046434848.chatgpt.site
+GitHub：〔发布仓库后把链接粘贴到这里〕
+
+Built with @binancezh Binance Agent OS
+#BinanceAgentOS #AIAgent
